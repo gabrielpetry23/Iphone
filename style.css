@@ -181,17 +181,18 @@ body, html {
     background-color: rgb(44, 44, 44);
 }
 
-.open-button {
+.open-button button {
     position: absolute;
-    bottom: 15px;
-    font-size: 10px;
-    border-radius: 20px;
-    width: fit-content;
-    height: 20px;
-    padding: 2px 5px;
+    bottom: 0px;
     left: 50%;
+    transform: translateX(-50%);    
+    width: 100px;
+    height: 5px;   
     background-color: white;
-    transform: translateX(-50%);
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    z-index: 10;
 }
 
 /* Apps Screen */
@@ -250,6 +251,37 @@ body, html {
 }
 
 .app-2:nth-child(2) {
-    background: url(images/spotify.png);
+    background: url(images/settings.png);
     background-size: cover;
 }
+
+.app-2:nth-child(3) {
+    background: url(images/contacts.png);
+    background-size: cover;
+}
+
+.app-2:nth-child(4) {
+    background: url(images/safari.png);
+    background-size: cover;
+}
+
+.app-3:nth-child(1) {
+    background: url(images/weather.png);
+    background-size: cover;
+}
+
+.app-3:nth-child(2) {
+    background: url(images/whatsapp.png);
+    background-size: cover;
+}
+
+.app-3:nth-child(3) {
+    background: url(images/mail.png);
+    background-size: cover;
+}
+
+.app-3:nth-child(4) {
+    background: url(images/photos.png);
+    background-size: cover;
+}
+
