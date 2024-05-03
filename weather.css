@@ -1,0 +1,241 @@
+body, html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-img {
+    position: relative;
+    width: 350px; 
+    height: 700px;
+}
+
+.phone-img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.screen {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%; 
+    max-width: 320px;
+    height: auto; 
+    max-height: 650px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    z-index: 1;
+    overflow: hidden;
+
+    .open-button button {
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);    
+        width: 100px;
+        height: 5px;   
+        background-color: white;
+        border-radius: 20px;
+        cursor: pointer;
+        border: none;
+        z-index: 10;
+    }
+
+    .box {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: rgb(221, 239, 251);
+        border-radius: 20px;
+        padding: 16px;
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+    }
+    
+    .background-img {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(images/backgroundImage.jpg);
+        background-size: cover;
+        background-position: center;
+        filter: blur(5px);
+        z-index: -1; 
+    }
+    
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    
+    .box {
+        background-color: rgb(221, 239, 251);
+        border-radius: 20px;
+        padding: 16px;
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.2); 
+    }
+    
+    #search {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        border: 1px solid #bdbdbd;
+        border-radius: 10px;
+        padding: 4px 12px;
+    }
+    
+    #search input {
+        border: none;
+        background-color: transparent;
+        font-size: 16px;
+        width: 100%;
+    }
+    
+    #search input:focus-visible {
+        outline: none;
+    }
+    
+    #search button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    
+    #weather {
+        display: none;
+        margin-top: 15px;
+    }
+    
+    #weather.show {
+        display: block;
+    }
+    
+    #weather #title {
+        text-align: center;
+        margin-bottom: 10px;
+        font-weight: 600px;
+    }
+    
+    #temp {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 20px;
+        background-color: rgb(51, 152, 253);
+        color: white;
+        border-radius: 20px;
+        padding: 20px;
+    }
+    
+    #temp-icon {
+        width: 120px;
+        filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.2));
+    }
+    
+    #temp-value {
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 55px;
+    }
+    
+    #temp-description {
+        font-weight: 500;
+        text-transform: capitalize;
+    }
+    
+    .other-infos {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+    
+    .other-infos .info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+        background-color: rgb(216, 231, 250);
+        gap: 10px;
+    }
+    
+    .other-infos .info h2 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+    .other-infos .info i {
+        font-size: 20px;
+        width: 20%;
+        text-align: center;
+    }
+    
+    #temp-max-icon {
+        color: red;
+    }
+    
+    #temp-min-icon {
+        color: rgb(255, 151, 33);
+    }
+    
+    #humidity-icon {
+        color: rgb(33, 107, 255);
+    }
+    
+    #wind-icon {
+        color: rgb(83, 0, 200)
+    }
+    #title,
+#temp-value,
+#temp-description,
+.other-infos .info h2,
+.other-infos .info p {
+    font-size: 17px;
+}
+
+#temp-icon,
+#temp-max-icon,
+#temp-min-icon,
+#humidity-icon,
+#wind-icon {
+    font-size: 16px;
+}
+}
+
+.top-screen {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: white;
+    font-family: "Avenir Next Condensed Medium", Calibri, "Gill Sans", sans-serif;
+}
+  
+.clock {
+    padding: 0px 0px 0px 40px;
+    font-size: 16px
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-screen .signal img,
+.top-screen .wifi img,
+.top-screen .battery img {
+    width: 16px; 
+    margin-right: 8px; 
+    filter: invert(100%); 
+}
+
