@@ -1,47 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-        <link rel="stylesheet" href="movie.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <title>Netflix</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="movie.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Netflix</title>
+</head>
 <body>
-        <div class="phone">
-            <div class="phone-img">
-                <img src="images/iphone_black.png" alt="Iphone">
-            </div>
+    <div class="phone">
+        <div class="phone-img">
+            <img src="images/iphone_black.png" alt="Iphone">
+        </div>
 
-            <div class="open-button">
-                <button id="open-button" onclick="openAppScreen()"></button>
-            </div>
+        <div class="open-button">
+            <button id="open-button" onclick="openAppScreen()"></button>
+        </div>
 
-            <div class="screen">
-                <div class="top-screen">
-                    <span class="clock">9:41</span>
+        <div class="screen">
+            <div class="top-screen">
+                <span class="clock">9:41</span>
                 <div class="icons">
                     <div class="signal"> <img src="images/signal.png" alt="Signal icon"> </div>
                     <div class="wifi"> <img src="images/wifi.png" alt="Wifi icon"> </div>
                     <div class="battery"> <img src="images/battery.png" alt="Battery icon"> </div>
                 </div>
             </div>
-                <div class="container">
-                    <div class="search-box">
-                        <a href=""><h1>Netflix</h1></a>
-                            <form id="search-form">
-                                <input type="text" id="search-input" placeholder="Search movies..." class="search">
-                                <button class="search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                            </form>
-                        </div>
-                    
-                    <main id="main"></main>
+            <div class="container">
+                <div class="search-box">
+                    <a href=""><h1>Netflix</h1></a>
+                    <form id="search-form">
+                        <input type="text" id="search-input" placeholder="Search movies..." class="search">
+                        <button class="search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
                 </div>
+                <main id="main"></main>
             </div>
+        </div>
+    </div>
 
-<script src="movie.js"></script>
+    <script src="movie.js"></script>
 </body> 
 </html>

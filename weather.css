@@ -37,8 +37,6 @@ body, html {
     z-index: 10;
 }
 
-
-
 .top-screen {
     display: flex;
     align-items: flex-start;
@@ -96,7 +94,6 @@ body, html {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-
     }
     
     .background-img {
@@ -147,12 +144,12 @@ body, html {
     }
     
     #weather {
-        display: block;
+        display: none;
         margin-top: 15px;
     }
     
     #weather.show {
-        display: none;
+        display: block;
     }
     
     #weather #title {
