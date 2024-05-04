@@ -16,9 +16,68 @@ body, html {
     height: 100%;
 }
 
+.phone {
+    position: relative;
+    width: 350px;
+    height: 700px;
+}
+
+.open-button button {
+    position: absolute;
+    top: 690px;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);    
+    width: 100px;
+    height: 5px;   
+    background-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    z-index: 10;
+}
+
+
+
+.top-screen {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: white;
+    font-family: "Avenir Next Condensed Medium", Calibri, "Gill Sans", sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 35px;
+}
+  
+.clock {
+    padding: 0px 0px 0px 40px;
+    font-size: 16px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-screen .signal img,
+.top-screen .wifi img,
+.top-screen .battery img {
+    width: 16px; 
+    height: 16px;
+    margin-right: 8px; 
+    filter: invert(100%); 
+}
+
+.top-screen .battery img {
+    margin-right: 12px;
+}
+
 .screen {
     position: absolute;
-    top: 48%;
+    top: 53%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%; 
@@ -30,35 +89,18 @@ body, html {
     z-index: 1;
     overflow: hidden;
 
-    .open-button button {
-        position: absolute;
-        bottom: 0px;
-        left: 50%;
-        transform: translateX(-50%);    
-        width: 100px;
-        height: 5px;   
-        background-color: white;
-        border-radius: 20px;
-        cursor: pointer;
-        border: none;
-        z-index: 10;
-    }
-
-    .box {
+    .container {
         font-family: "Poppins", sans-serif;
         font-weight: 500;
         font-style: normal;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        background-color: rgb(221, 239, 251);
-        border-radius: 20px;
-        padding: 16px;
-        box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+
     }
     
     .background-img {
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
         width: 100%;
@@ -70,15 +112,9 @@ body, html {
         z-index: -1; 
     }
     
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-    }
-    
     .box {
-        background-color: rgb(221, 239, 251);
+        height: 580px;
+        background-color: rgba(221, 239, 251, 0.95);
         border-radius: 20px;
         padding: 16px;
         box-shadow: 5px 5px 5px rgba(0,0,0,0.2); 
@@ -111,12 +147,12 @@ body, html {
     }
     
     #weather {
-        display: none;
+        display: block;
         margin-top: 15px;
     }
     
     #weather.show {
-        display: block;
+        display: none;
     }
     
     #weather #title {
@@ -211,31 +247,5 @@ body, html {
 #wind-icon {
     font-size: 16px;
 }
-}
-
-.top-screen {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    color: white;
-    font-family: "Avenir Next Condensed Medium", Calibri, "Gill Sans", sans-serif;
-}
-  
-.clock {
-    padding: 0px 0px 0px 40px;
-    font-size: 16px
-}
-
-.icons {
-    display: flex;
-    justify-content: space-between;
-}
-
-.top-screen .signal img,
-.top-screen .wifi img,
-.top-screen .battery img {
-    width: 16px; 
-    margin-right: 8px; 
-    filter: invert(100%); 
 }
 

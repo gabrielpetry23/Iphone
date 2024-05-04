@@ -9,3 +9,7 @@ function openCalculator() {
 function openWeather() {
     window.location.href = "weather.html"
 }
+
+function openNetflix() {
+    window.location.href = "movie.html"
+}
