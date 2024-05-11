@@ -7,9 +7,13 @@ function openCalculator() {
 }
 
 function openWeather() {
-    window.location.href = "weather.html"
+    window.location.href = "weather.html";
 }
 
 function openNetflix() {
-    window.location.href = "movie.html"
+    window.location.href = "movie.html";
+}
+
+function openSnake() {
+    window.location.href = "snake.html";
 }

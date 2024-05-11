@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Snake Game </title>
+        <link rel="stylesheet" href="snake.css">
+        <script src="snake.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="phone">
+                <div class="phone-img">
+                    <img src="images/iphone_black.png" alt="Iphone">
+                </div>
+        
+                <div class="screen">
+    
+                    <div class="top-screen">
+                        <span class="clock">9:41</span>
+                        <div class="icons">
+                            <div class="signal"> <img src="images/signal.png" alt="Signal icon"> </div>
+                            <div class="wifi"> <img src="images/wifi.png" alt="Wifi icon"> </div>
+                            <div class="battery"> <img src="images/battery.png" alt="Battery icon"> </div>
+                        </div>
+                    </div>
+
+                    <button id="restart-button" onclick="restartGame()">Restart</button>
+                    <div id="score"></div>
+                    <canvas id="tela" style="background-color: #333;"></canvas>
+    
+                    <div class="open-button">
+                        <button id="open-button" onclick="openAppScreen()"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

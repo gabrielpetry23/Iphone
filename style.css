@@ -18,7 +18,7 @@ body, html {
 
 .screen {
     position: absolute;
-    top: 48%;
+    top: 43%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 320px; 
@@ -121,7 +121,7 @@ body, html {
 
 .home-screen {
     position: absolute;
-    top: 48%;
+    top: 43%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 320px; /* Largura da tela */
@@ -191,7 +191,7 @@ body, html {
 /* Apps Screen */
 .apps-screen {
     position: absolute;
-    top: 48%;
+    top: 43%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 320px; /* Largura da tela */
@@ -274,7 +274,7 @@ body, html {
 }
 
 .app-3:nth-child(4) {
-    background: url(images/photos.png);
+    background: url(images/snakeIcon.png);
     background-size: cover;
 }
 
